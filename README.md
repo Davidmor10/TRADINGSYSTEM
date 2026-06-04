@@ -1,49 +1,36 @@
-# Trading Journal Pro — Zero-Setup Edition
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A fully self-contained trading journal. No database, no API keys, no environment variables.
-All data persists in **localStorage**.
+## Getting Started
 
-## Deploy in 3 steps
+First, run the development server:
 
-### 1. Install Node.js
-Download from **https://nodejs.org** (LTS)
-
-### 2. Install & run locally
 ```bash
-cd trading-journal-v2
-npm install
 npm run dev
-# Open http://localhost:3000
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-### 3. Deploy to Vercel (one-click)
-```bash
-# Push to GitHub, then import at vercel.com
-# OR use the Vercel CLI:
-npx vercel
-```
-No environment variables needed. Works immediately.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
----
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Features
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-| Page | What it does |
-|------|-------------|
-| **Dashboard** | KPI cards, equity curve, calendar heatmap, recent trades table |
-| **Today** | Daily bias, market notes, emotional state, day grade |
-| **Trade Log** | Full CRUD with sort/filter, auto P&L calc ($20/pt NQ), expand for notes |
-| **Statistics** | Win rate, profit factor, breakdown by setup/emotion/direction, rules adherence ring |
-| **Rules** | Pre-trade checklist with categories, add/edit/deactivate rules |
-| **Billing** | Mock Stripe pricing card, simulated upgrade flow, premium state toggle |
+## Learn More
 
-## Data
-- All data is in `localStorage` under key `tj_v2_state`
-- 15 seed trades are pre-loaded so you can see the app fully populated immediately
-- Reset to defaults: open browser console and run `localStorage.clear()`
+To learn more about Next.js, take a look at the following resources:
 
-## Tech Stack
-- Next.js 14 (App Router, Client Components)
-- Tailwind CSS with custom dark theme
-- date-fns for date logic
-- Zero external services
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
